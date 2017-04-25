@@ -69,16 +69,32 @@ public class MainActivity extends AppCompatActivity {
                 new File(Environment.getExternalStorageDirectory().getPath() + File.separator + "apptest-release.apk");
 
         if (!apkFile.exists()) {
-            Toast.makeText(this,"文件不存在",Toast.LENGTH_LONG);
+
             Log.e("LGC", "文件不存在");
+            mHandler.post(new Runnable() {
+                @Override
+                public void run() {
+                    pd.dismiss();
+                    Toast.makeText(MainActivity.this,"文件不存在",Toast.LENGTH_LONG);
+
+                }
+            });
             return;
         }
 
         if(!apkFile.canRead()){
             // 如果没有读权限,确定你在 AndroidManifest 中是否声明了读写权限
             // 如果是6.0以上手机要查看手机的权限管理，你的这个app是否具有读写权限
-            Toast.makeText(this,"没有读写权限",Toast.LENGTH_LONG);
             Log.d("LGC", "apkFile.canRead()= " + apkFile.canRead());
+            mHandler.post(new Runnable() {
+                @Override
+                public void run() {
+                    pd.dismiss();
+                    Toast.makeText(MainActivity.this,"没有读写权限",Toast.LENGTH_LONG);
+
+                }
+            });
+            return;
         }
 
 
