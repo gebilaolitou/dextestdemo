@@ -12,16 +12,33 @@
         android:id="@+id/main_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="类信息!" />
 
 
     <Button
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
-        android:text="测试"
+        android:text="测试加载类"
         android:textSize="20sp"
         android:id="@+id/test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/main_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="资源信息" />
 
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="测试加载资源"
+        android:textSize="20sp"
+        android:id="@+id/test_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
