@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AppTest/AppTest.iml" filepath="$PROJECT_DIR$/AppTest/AppTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/DexTestDemo.iml" filepath="$PROJECT_DIR$/DexTestDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/dexapplib/dexapplib.iml" filepath="$PROJECT_DIR$/dexapplib/dexapplib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dexclassloaderapp/dexclassloaderapp.iml" filepath="$PROJECT_DIR$/dexclassloaderapp/dexclassloaderapp.iml" />
     </modules>
   </component>
 </project>

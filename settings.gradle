@@ -1,1 +1,1 @@
-include ':app', ':AppTest', ':dexapplib'
+include  ':AppTest', ':dexapplib', ':dexclassloaderapp'
