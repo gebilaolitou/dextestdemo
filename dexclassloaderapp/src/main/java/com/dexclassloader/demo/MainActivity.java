@@ -219,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
             // Print all classes in the DexFile
             for (Enumeration<String> classNames = dx.entries(); classNames.hasMoreElements(); ) {
                 String className = classNames.nextElement();
-                if (className.equals("com.yibao.test.IDexTestImpl")) {
+                if (className.equals("com.test.IDexTestImpl")) {
                     Log.d("LGC", "#########################################################" + className);
                     Log.d("LGC", className);
                     Log.d("LGC", "#########################################################" + className);
